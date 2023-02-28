@@ -1,0 +1,15 @@
+/* ---------------------------CSS for Home Page--------------------------------*/
+nav{
+    background-color: rgb(42, 202, 202);
+    height: 100px;
+}
+
+#nav_logo{
+    height: 150;
+    width: 30;
+
+}
+
+.carousel-inner{
+    height: 500px;
+}
