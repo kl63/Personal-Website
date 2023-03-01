@@ -1,6 +1,6 @@
 /* ---------------------------CSS for Home Page--------------------------------*/
 nav{
-    background-color: rgb(42, 202, 202);
+    background: linear-gradient(45deg, #0ff, #f0f);
     height: 100px;
 }
 
@@ -10,6 +10,60 @@ nav{
 
 }
 
+body {
+    background: linear-gradient(45deg, #0ff, #f0f);
+    animation: background 10s ease infinite;
+  }
+  
+  @keyframes background {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
 .carousel-inner{
     height: 500px;
+}
+
+#header{
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Rampart One', cursive;
+    border-bottom: 2px solid black;
+}
+
+.card-title{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-text{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.emojis{
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.card {
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+
+.card-link:hover{
+    text-decoration: none;
+    color: inherit;
+}
+.card-link{
+    text-decoration: none;
+    color: inherit;
 }
