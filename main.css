@@ -1,6 +1,6 @@
 /* ---------------------------CSS for Home Page--------------------------------*/
 nav{
-    background: linear-gradient(45deg, #0ff, #f0f);
+    background: linear-gradient(45deg, rgb(225, 244, 244), rgb(119, 115, 115));
     height: 100px;
 }
 
@@ -11,21 +11,21 @@ nav{
 }
 
 body {
-    background: linear-gradient(45deg, #0ff, #f0f);
-    animation: background 10s ease infinite;
+  background: linear-gradient(45deg, rgb(225, 244, 244), rgb(119, 115, 115));
+  animation: background 10s ease infinite;
+}
+
+@keyframes background {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  @keyframes background {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+  50% {
+    background-position: 100% 50%;
   }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 .carousel-inner{
     height: 500px;
@@ -34,7 +34,8 @@ body {
 #header{
     font-family: 'Alfa Slab One', cursive;
     font-family: 'Rampart One', cursive;
-    border-bottom: 2px solid black;
+    
+    
 }
 
 .card-title{
@@ -57,6 +58,7 @@ body {
 .card {
     border-radius: 1rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
   }
 
 .card-link:hover{
@@ -66,4 +68,44 @@ body {
 .card-link{
     text-decoration: none;
     color: inherit;
+}
+#footer_logo{
+    height: 50px;
+    width: 100px;
+    margin-bottom: 0px;
+}
+footer{
+  background: linear-gradient(45deg, rgb(225, 244, 244), rgb(143, 140, 140));
+  height: 300px;
+}
+.footer-text{
+  text-emphasis: none;
+  color: inherit;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.foooter-headings{
+  text-align: center;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+#linkedin-icon {
+  color: darkblue;
+  font-size: 50px;
+  margin-right: 10px;
+  
+
+}
+
+#github-icon{
+  color: gray;
+  font-size: 50px;
+}
+
+#copyright{
+  background: linear-gradient(45deg, rgb(225, 244, 244), rgb(143, 140, 140));
+  border-top: 4px solid black;
+
 }
