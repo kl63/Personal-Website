@@ -24,7 +24,38 @@ function generateQuote() {
 }
 setInterval(generateQuote, 5500);
 
-
+$(document).ready(function() {
+	var quotes = [
+	  {
+		quote: "Be the change you wish to see in the world.",
+		author: "Mahatma Gandhi"
+	  },
+	  {
+		quote: "The only way to do great work is to love what you do.",
+		author: "Steve Jobs"
+	  },
+	  {
+		quote: "The best time to plant a tree was 20 years ago. The second best time is now.",
+		author: "Chinese Proverb"
+	  },
+	  {
+		quote: "You miss 100% of the shots you don’t take.",
+		author: "Wayne Gretzky"
+	  },
+	  {
+		quote: "The only true wisdom is in knowing you know nothing.",
+		author: "Socrates"
+	  }
+	];
+	var quoteIndex = Math.floor(Math.random() * quotes.length);
+	$("#quote").text(quotes[quoteIndex].quote);
+	$("#author").text("- " + quotes[quoteIndex].author);
+	$("#new-quote-btn").on("click", function() {
+	  quoteIndex = Math.floor(Math.random() * quotes.length);
+	  $("#quote").text(quotes[quoteIndex].quote);
+	  $("#author").text("- " + quotes[quoteIndex].author);
+	});
+  });
 
 
 
