@@ -6,39 +6,26 @@ var carousel = new bootstrap.Carousel(myCarousel, {
   touch: true 
 })
 
-const quotes = [
+const items = [
   {
-    quote: "The only way to do great work is to love what you do.",
-    author: "Steve Jobs"
+    id: "item1",
+    description: "This is the description for item 1"
   },
   {
-    quote: "You don't have to be great to start, but you have to start to be great.",
-    author: "Zig Ziglar"
+    id: "item2",
+    description: "This is the description for item 2"
   },
   {
-    quote: "Believe you can and you're halfway there.",
-    author: "Theodore Roosevelt"
-  },
-  {
-    quote: "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-    author: "Winston Churchill"
-  },
-  {
-    quote: "Don't watch the clock; do what it does. Keep going.",
-    author: "Sam Levenson"
+    id: "item3",
+    description: "This is the description for item 3"
   }
 ];
 
-function generateQuote() {
-  const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-  document.getElementById("quote").innerHTML = randomQuote.quote;
-  document.getElementById("author").innerHTML = "- " + randomQuote.author;
-}
+const itemDescription = document.getElementById("item-description");
 
-
-
-
-
-
-  
-  
+items.forEach((item) => {
+  const listItem = document.getElementById(item.id);
+  listItem.addEventListener("click", () => {
+    itemDescription.innerHTML = item.description;
+  });
+});
