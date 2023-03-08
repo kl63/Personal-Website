@@ -96,7 +96,10 @@ font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
 }
-
+#introduction-statement{
+  font-size: larger;
+  font-weight: bold;
+}
 .card-emojis{
     font-size: 50px;
     text-align: center;
