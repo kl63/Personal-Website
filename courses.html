@@ -12,6 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>-->
     <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-b/8YHw/6s1sB/PlN6Qd+lWZ6U2Z6+fCq6DqF6YGMpBkDDi6EHgmRzA/kHbTw+y8" crossorigin="anonymous"></script>
     <!-- My CSS -->
     <link rel="stylesheet" href="/main.css">
     <!-- Favicon -->
@@ -25,7 +26,7 @@
       <script src="/script.js"></script>
     
     <title>Kevin Lin's Website</title>
-  <body class="courses-body">
+  <body class="index-body">
     <!--Nav Bar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
@@ -36,10 +37,10 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="courses.html">Courses</a>
+              <a class="nav-link" href="courses.html">Courses</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="portfolio.html" id="navbarDropdownMenuLink" 
@@ -56,295 +57,445 @@
       </div>
     </nav>
     <!--Page Contents-->
-    <h1 id="body-header">My Courses</h1>
-    <div class="container">
-      <h2>Fall 2021</h2>
-      <div class="row">
+      <div class="courses-body">
+        <h1 id="body-header">My Courses</h1>
+        <h6>Here are some of the courses I have taken or am currently taking.<br>Click on each course for a description of the course</h6>
+          <div class="row" id="first-year">
+            <div class="col-6">
+              <h2>Fall 2021</h2>
+              <div class="col">
+                <ul class="list-group">
+                  <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal1-f21">[CS 100] - Roadmap to Computing</li>
+                  <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal2-f21">[FRSH SEM] - First Year Seminar</li>
+                  <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal3-f21">[HUM 101] - Writing, Speaking, Thinking I</li>
+                  <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal4-f21">[MATH 108] - MATH 108 University Mathematics B</li>
+                  <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal5-f21">[STS 201] - Understanding Technological Society</li>
+                  <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal6-f21">[STS 210] - General Psychology</li>
+                  <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal7-f21">[ENG 340] - Oral Presentation</li>
+                  <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal8-f21">[SS 2**] - Intro Political Science</li>
+                  <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal9-f21">[STS 221] - Sociology</li>
+                  <!-- add more items as needed -->
+                </ul>
+              </div>
+            </div>
+            <div class="col-6">
+              <h2>Spring 2022</h2>
+              <ul class="list-group">
+                <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal1-s22">[CS 113] - Intro Computer Sci I</li>
+                <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal2-s22">[HUM 102] - Writing, Speaking, Thinking II</li>
+                <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal3-s22">[MATH 110] - University Mathematics B II</li>
+                <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal4-s22">[PHYS 203] - The Earth in Space</li>
+                <!-- add more items as needed -->
+              </ul>
+          </div>
+        </div>
+      
+        <div class="row">
+          <div class="col-6">
+            <h2>Fall 2022</h2>
+            <div class="col">
+              <ul class="list-group">
+                <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal1-f21">[CS 100] - Roadmap to Computing</li>
+                <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal2-f21">[FRSH SEM] - First Year Seminar</li>
+                <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal3-f21">[HUM 101] - Writing, Speaking, Thinking I</li>
+                <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal4-f21">[MATH 108] - MATH 108 University Mathematics B</li>
+                <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal5-f21">[STS 201] - Understanding Technological Society</li>
+                <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal6-f21">[STS 210] - General Psychology</li>
+                <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal7-f21">[ENG 340] - Oral Presentation</li>
+                <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal8-f21">[SS 2**] - Intro Political Science</li>
+                <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal9-f21">[STS 221] - Sociology</li>
+                <!-- add more items as needed -->
+              </ul>
+            </div>
+          </div>
+          <div class="col-6">
+            <h2>Spring 2023</h2>
+            <ul class="list-group">
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal1-s22">[CS 113] - Intro Computer Sci I</li>
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal2-s22">[HUM 102] - Writing, Speaking, Thinking II</li>
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal3-s22">[MATH 110] - University Mathematics B II</li>
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal4-s22">[PHYS 203] - The Earth in Space</li>
+              <!-- add more items as needed -->
+            </ul>
+        </div>
+      </div>
+    
+      <div class="row" id="third-year">
+        <div class="col-6">
+          <h2>Fall 2023</h2>
+          <div class="col">
+            <ul class="list-group">
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal1-f21">[CS 100] - Roadmap to Computing</li>
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal2-f21">[FRSH SEM] - First Year Seminar</li>
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal3-f21">[HUM 101] - Writing, Speaking, Thinking I</li>
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal4-f21">[MATH 108] - MATH 108 University Mathematics B</li>
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal5-f21">[STS 201] - Understanding Technological Society</li>
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal6-f21">[STS 210] - General Psychology</li>
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal7-f21">[ENG 340] - Oral Presentation</li>
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal8-f21">[SS 2**] - Intro Political Science</li>
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal9-f21">[STS 221] - Sociology</li>
+              <!-- add more items as needed -->
+            </ul>
+          </div>
+        </div>
+        <div class="col-6">
+          <h2>Spring 2024</h2>
+          <ul class="list-group">
+            <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal1-s22">[CS 113] - Intro Computer Sci I</li>
+            <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal2-s22">[HUM 102] - Writing, Speaking, Thinking II</li>
+            <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal3-s22">[MATH 110] - University Mathematics B II</li>
+            <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal4-s22">[PHYS 203] - The Earth in Space</li>
+            <!-- add more items as needed -->
+          </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-6">
+        <h2>Fall 2024</h2>
         <div class="col">
           <ul class="list-group">
             <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal1-f21">[CS 100] - Roadmap to Computing</li>
             <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal2-f21">[FRSH SEM] - First Year Seminar</li>
             <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal3-f21">[HUM 101] - Writing, Speaking, Thinking I</li>
-            <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal4-f21">[MATH 108] - MATH 108	University Mathematics B</li>
+            <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal4-f21">[MATH 108] - MATH 108 University Mathematics B</li>
             <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal5-f21">[STS 201] - Understanding Technological Society</li>
             <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal6-f21">[STS 210] - General Psychology</li>
             <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal7-f21">[ENG 340] - Oral Presentation</li>
+            <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal8-f21">[SS 2**] - Intro Political Science</li>
+            <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal9-f21">[STS 221] - Sociology</li>
             <!-- add more items as needed -->
           </ul>
         </div>
-        <h2>Spring 2022</h2>
-        <div class="col">
-          <ul class="list-group">
-            <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal1">[CS 100] - </li>
-            <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal2">[FRSH SEM] - </li>
-            <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal3">Item 3</li>
-            <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal4">Item 4</li>
-            <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal5">Item 5</li>
-            <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal6">Item 6</li>
-            <!-- add more items as needed -->
+      </div>
+      <div class="col-6">
+        <h2>Spring 2025</h2>
+        <ul class="list-group">
+          <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal1-s22">[CS 113] - Intro Computer Sci I</li>
+          <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal2-s22">[HUM 102] - Writing, Speaking, Thinking II</li>
+          <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal3-s22">[MATH 110] - University Mathematics B II</li>
+          <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal4-s22">[PHYS 203] - The Earth in Space</li>
+          <!-- add more items as needed -->
+        </ul>
+    </div>
+  </div>
+
+  <div class="row" id="fifth-year">
+    <div class="col-6">
+      <h2>Fall 2025</h2>
+      <div class="col">
+        <ul class="list-group">
+          <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal1-f21">[CS 100] - Roadmap to Computing</li>
+          <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal2-f21">[FRSH SEM] - First Year Seminar</li>
+          <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal3-f21">[HUM 101] - Writing, Speaking, Thinking I</li>
+          <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal4-f21">[MATH 108] - MATH 108 University Mathematics B</li>
+          <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal5-f21">[STS 201] - Understanding Technological Society</li>
+          <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal6-f21">[STS 210] - General Psychology</li>
+          <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal7-f21">[ENG 340] - Oral Presentation</li>
+          <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal8-f21">[SS 2**] - Intro Political Science</li>
+          <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal9-f21">[STS 221] - Sociology</li>
+          <!-- add more items as needed -->
+        </ul>
       </div>
     </div>
-    <!-- MODALS FOR FALL 2021-->
-    <!-- Modal 1 -->
-    <div class="modal fade" id="modal1-f21" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal1Label">[CS 100] - Roadmap to Computing</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            An introduction to programming and problem solving skills using Python or other very high 
-            level language. Topics include basic strategies for problem solving, constructs that 
-            control the flow of execution of a program and the use of high level data types such as 
-            lists, strings and dictionaries in problem representation. The course also presents an 
-            overview of selected topics in computing, such as networking and databases.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <div class="col-6">
+      <h2>Spring 2026 (TBD)</h2>
+      <ul class="list-group">
+        <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal1-s22">[CS 113] - Intro Computer Sci I</li>
+        <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal2-s22">[HUM 102] - Writing, Speaking, Thinking II</li>
+        <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal3-s22">[MATH 110] - University Mathematics B II</li>
+        <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal4-s22">[PHYS 203] - The Earth in Space</li>
+        <!-- add more items as needed -->
+      </ul>
+  </div>
+</div>
+</div>
+
+      <!-- MODALS FOR FALL 2021-->
+      <!-- [FALL 2021] Modal 1 -->
+      <div class="modal fade" id="modal1-f21" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal1Label">[CS 100] - Roadmap to Computing</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              An introduction to programming and problem solving skills using Python or other very high 
+              level language. Topics include basic strategies for problem solving, constructs that 
+              control the flow of execution of a program and the use of high level data types such as 
+              lists, strings and dictionaries in problem representation. The course also presents an 
+              overview of selected topics in computing, such as networking and databases.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      
+      <!-- [FALL 2021] Modal 2 -->
+      <div class="modal fade" id="modal2-f21" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal2Label">[FRSH SEM] - First Year Seminar</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Addresses issues related to a successful college life during weekly seminars. Topics include time 
+              management, study skills, interpersonal relationships, wellness, multicultural issues and 
+              career decision making. Freshman Seminar is a graduation requirement for all first-time, 
+              full-time freshmen.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- [FALL 2021] Modal 3 -->
+      <div class="modal fade" id="modal3-f21" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal3Label">[HUM 101] - Writing, Speaking, Thinking I</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              This course provides an introduction to college-level writing, particularly the 
+              rhetorical dimensions of composition, including purpose, audience, occasion, and genre. 
+              The course also focuses on the writing process, asking students to brainstorm topics, to 
+              write drafts, and to revise their writing based on reflection and peer feedback. 
+              Activities in the course involve reading challenging articles, essays, and prose and 
+              considering paintings, films, and other visual compositions. Additionally, students work 
+              to analyze claims, to formulate independent arguments, and to communicate ideas through 
+              clear, well-organized writing.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- [FALL 2021] Modal 4 -->
+      <div class="modal fade" id="modal4-f21" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal4Label">[MATH 108] - [MATH 108] - University Mathematics B</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Linear functions, equations, inequalities, systems of linear equations, quadratic 
+              equations, polynomials, rational expressions, expressions involving radicals, partial 
+              fraction decomposition, conic sections, graphing functions.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- [FALL 2021] Modal 5 -->
+      <div class="modal fade" id="modal5-f21" tabindex="-1" aria-labelledby="modal5Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal5Label">[STS 201] - Understanding Technological Society</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              A problem-centered and task-oriented course that integrates social science theory and 
+              practice into the leading public issues of a technological society. Students learn 
+              critical thinking through hands-on assignments. The course emphasizes student 
+              understanding of social institutions that directly affect technological development and 
+              professional careers. 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     
-    <!-- Modal 2 -->
-    <div class="modal fade" id="modal2-f21" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal2Label">[FRSH SEM] - First Year Seminar</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            Addresses issues related to a successful college life during weekly seminars. Topics include time 
-            management, study skills, interpersonal relationships, wellness, multicultural issues and 
-            career decision making. Freshman Seminar is a graduation requirement for all first-time, 
-            full-time freshmen.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  
+      <!-- [FALL 2021] Modal 6 -->
+      <div class="modal fade" id="modal6-f21" tabindex="-1" aria-labelledby="modal6Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal6Label">[STS 210] - General Psychology (T)</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <b>(Transfered Credits from Hudson County Community College)</b> Instruction and practice
+              in effective oral presentations. Students deliver a wide range of presentations adapted 
+              to the needs of a variety of audiences. Topics include voice and diction, presentation 
+              skills, the effective use of visual aids, reporting technical material and audience 
+              analysis. 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <!-- [FALL 2021] Modal 7 -->
+      <div class="modal fade" id="modal7-f21" tabindex="-1" aria-labelledby="modal7Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal7Label">[ENG 340] - Oral Presentation (T)</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <b>(Transfered Credits from Hudson County Community College)</b> Introduction to the study of human behavior. Topics include motivation, perception, 
+              learning, cognitive development, personality and emotion, individual difference, and 
+              biological basis of behavior, as well as methodology in psychological research. 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- [FALL 2021] Modal 8 -->
+      <div class="modal fade" id="modal8-f21" tabindex="-1" aria-labelledby="modal8Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal8Label">[SS 2**] - Intro Political Science (T)</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <b>(Transfered Credits from Hudson County Community College)</b> Provides an 
+              introduction to political theories and methods of politics as a science. The course 
+              includes analysis of structures and processes that characterize political behavior and 
+              political institutions. 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- [FALL 2021] Modal 9 -->
+      <div class="modal fade" id="modal9-f21" tabindex="-1" aria-labelledby="modal9Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal9Label">[STS 221] - Sociology (T)</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <b>(Transfered Credits from Hudson County Community College)</b> This course provides 
+              an introduction to the discipline of sociology, its major concepts, theories, and 
+              research methods, as well as key findings in the field. Using scientific and 
+              theoretical principles, students learn about the relationship between social 
+              organization, group dynamics, and human behavior, and about the functions of 
+              institutions such as religion, family, economy, government, education, the media, and 
+              medicine.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <!-- Modal 3 -->
-    <div class="modal fade" id="modal3-f21" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal3Label">[HUM 101] - Writing, Speaking, Thinking I</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            This course provides an introduction to college-level writing, particularly the 
-            rhetorical dimensions of composition, including purpose, audience, occasion, and genre. 
-            The course also focuses on the writing process, asking students to brainstorm topics, to 
-            write drafts, and to revise their writing based on reflection and peer feedback. 
-            Activities in the course involve reading challenging articles, essays, and prose and 
-            considering paintings, films, and other visual compositions. Additionally, students work 
-            to analyze claims, to formulate independent arguments, and to communicate ideas through 
-            clear, well-organized writing.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Modal 4 -->
-    <div class="modal fade" id="modal4-f21" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal4Label">[MATH 108] - [MATH 108] - University Mathematics B</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            Linear functions, equations, inequalities, systems of linear equations, quadratic 
-            equations, polynomials, rational expressions, expressions involving radicals, partial 
-            fraction decomposition, conic sections, graphing functions.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <!-- MODALS FOR SPRING 2022-->
+      <!-- [SPRING 2022] Modal 1 --> 
+      <div class="modal fade" id="modal1-s22" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal1Label">[CS 113] - Intro Computer Sci I</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Intensive introduction to computer science. Problem solving decomposition. Writing, 
+              debugging, and analyzing computer programs. Introduction to arrays and lists. Iteration 
+              and recursion. The Java language is introduced and used to highlight these concepts.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      
+      <!-- [SPRING 2022] Modal 2 -->
+      <div class="modal fade" id="modal2-s22" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal2Label">[HUM 102] - Writing, Speaking, Thinking II</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              This course builds on the skills students learned and practiced in HUM 101 and provides 
+              an introduction to writing using both primary and secondary sources. Emphasis is on 
+              developing research questions, finding and citing sources, conducting primary research, 
+              and synthesizing elements of research into persuasive arguments. Students also complete 
+              this course knowing how to correctly document and attribute sources.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- [SPRING 2022] Modal 3 -->
+      <div class="modal fade" id="modal3-s22" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal3Label">[MATH 110] - University Mathematics B II</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Trigonometric functions and identities, laws of sines and cosines, logarithmic 
+              equations, systems of nonlinear equations, polar coordinates.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- [SPRING 2022] Modal 4 -->
+      <div class="modal fade" id="modal4-s22" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal4Label">[PHYS 203] - The Earth in Space</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Introduces fundamental phenomena, such as plate tectonics, erosion, volcanism, and 
+              glaciation. Studies the interaction between the Earth's four major reservoirs 
+              atmosphere, hydrosphere, biosphere and solid earth; investigates the dependence of the
+              Earth on the Sun; the effect of the Moon on the Earth. Extends knowledge gained from 
+              studying the Earth to other planets in this solar system.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <!-- Modal 5 -->
-    <div class="modal fade" id="modal5-f21" tabindex="-1" aria-labelledby="modal5Label" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal5Label">[STS 201] - Understanding Technological Society</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            A problem-centered and task-oriented course that integrates social science theory and 
-            practice into the leading public issues of a technological society. Students learn 
-            critical thinking through hands-on assignments. The course emphasizes student 
-            understanding of social institutions that directly affect technological development and 
-            professional careers. 
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Modal 6 -->
-    <div class="modal fade" id="modal6-f21" tabindex="-1" aria-labelledby="modal6Label" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal6Label">[STS 210] - General Psychology (T)</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <b>(Transfered Credits from Hudson County Community College)</b> Instruction and practice
-            in effective oral presentations. Students deliver a wide range of presentations adapted 
-            to the needs of a variety of audiences. Topics include voice and diction, presentation 
-            skills, the effective use of visual aids, reporting technical material and audience 
-            analysis. 
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal 7 -->
-    <div class="modal fade" id="modal7-f21" tabindex="-1" aria-labelledby="modal7Label" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal7Label">[ENG 340] - Oral Presentation (T)</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <b>(Transfered Credits from Hudson County Community College)</b> Introduction to the study of human behavior. Topics include motivation, perception, 
-            learning, cognitive development, personality and emotion, individual difference, and 
-            biological basis of behavior, as well as methodology in psychological research. 
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- MODALS FOR SPRING 2022-->
-    <!-- Modal 1 -->
-    <div class="modal fade" id="modal1-s22" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal1Label">Item 1 Description</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            This is the description for Item 1.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Modal 2 -->
-    <div class="modal fade" id="modal2-s22" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal2Label">Item 2 Description</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            This is the description for Item 2.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Modal 3 -->
-    <div class="modal fade" id="modal3-s22" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal3Label">Item 2 Description</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            This is the description for Item 3 blo.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Modal 4 -->
-    <div class="modal fade" id="modal4-s22" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal4Label">Item 2 Description</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            This is the description for Item 4 blo.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 5 -->
-    <div class="modal fade" id="modal5-s22" tabindex="-1" aria-labelledby="modal5Label" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal5Label">Item 2 Description</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            This is the description for Item 5 blo.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 6 -->
-    <div class="modal fade" id="modal6-s22" tabindex="-1" aria-labelledby="modal6Label" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal6Label">Item 2 Description</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            This is the description for Item 6 blo.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-        <!---Footer Here-->
+  <!---Footer Here-->
   <footer>
     <div class="container">
       <div class="row">
