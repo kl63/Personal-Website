@@ -222,4 +222,24 @@ font-size: 50px;
 }
 #first-year, #third-year, #fifth-year{
   background-color: lightgray;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+#second-year, #fourth-year{
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+#minior_course1, #minor_course2, #minor_course3{
+  background-color: yellowgreen;
+}
+.keys{
+  background-color: yellowgreen;
+  color: black;
+}
+.list-group-item{
+  margin-bottom: 10x;
+}
+.list-group{
+  border: 3px solid black;
+  border-radius: 5px;
 }
